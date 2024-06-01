@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/pink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myQuotes">
+    <TextView
+        android:id="@+id/catName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Category Name"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"/>
+    <LinearLayout
+        android:id="@+id/quotes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerInParent="true">
+         <TextView
+             android:id="@+id/quotes"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Quote Here"
+             android:textSize="20sp"
+             android:textColor="@color/black"
+             android:textStyle="bold|italic"
+             android:layout_marginEnd="20dp"
+             android:layout_marginStart="20dp"
+             android:minHeight="210dp"/>
+        <TextView
+            android:id="@+id/autName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author Name"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="end"/>
+        <ImageView
+            android:id="@+id/favImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:background="@drawable/round_background"
+            android:paddingStart="20dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Next"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_background"
+            android:paddingStart="20dp"/>
+        <ImageView
+            android:id="@+id/shareImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/share"
+
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
